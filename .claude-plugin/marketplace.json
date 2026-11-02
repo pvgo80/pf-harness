@@ -1,0 +1,121 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "pf-skills",
+  "description": "Curated Claude Code skill catalog: shared building blocks, two idea→ship lanes (engineering, one-shot), design, review, and productivity skills. Projects opt in per plugin.",
+  "owner": {
+    "name": "pvgo80"
+  },
+  "metadata": {
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "building",
+      "description": "Shared foundation both lanes start from: grilling interviews, prototyping, handoffs, knowledge capture, zoom-out context. Co-install with engineering or one-shot.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/building/compound",
+        "./skills/building/grill-me",
+        "./skills/building/grill-with-docs",
+        "./skills/building/handoff",
+        "./skills/building/prototype",
+        "./skills/building/zoom-out"
+      ]
+    },
+    {
+      "name": "one-shot",
+      "description": "End-to-end plan→ship orchestration with three autonomy modes (hitl/grill/auto), plus its PRD lane (write-a-prd → prd-to-issues → issue-worker/issue-swarm). Review cascade (code-review → code-fix), council-of-agents planning, create-pr + create-commit hygiene, and the aoe stacked-PR pipeline over tagged GitHub issues (aoe-orchestrate-plan: resident orchestrator hub, parallel lanes, switchable hitl/afk).",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/one-shot/one-shot",
+        "./skills/one-shot/aoe-orchestrate-plan",
+        "./skills/one-shot/council-of-agents",
+        "./skills/one-shot/code-review",
+        "./skills/one-shot/code-fix",
+        "./skills/one-shot/create-pr",
+        "./skills/one-shot/create-commit",
+        "./skills/one-shot/write-a-prd",
+        "./skills/one-shot/prd-to-issues",
+        "./skills/one-shot/issue-worker",
+        "./skills/one-shot/issue-swarm"
+      ]
+    },
+    {
+      "name": "design",
+      "description": "Design workflow: map the IA, define the design system, then build a navigable lo-fi wireframe.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/design/write-an-ia",
+        "./skills/design/design-system",
+        "./skills/design/build-lofi"
+      ]
+    },
+    {
+      "name": "marketing",
+      "description": "Humanize AI-drafted copy: detect and fix the documented signs of AI writing.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/marketing/humanizer"
+      ]
+    },
+    {
+      "name": "engineering",
+      "description": "Engineering lane (mostly vendored from mattpocock/skills): the ask-the-flow router, TDD, diagnosing bugs, domain modelling, codebase design, spec/ticket flows, triage, research, code review, improve-codebase-architecture, wayfinder multi-session planning, session retrospectives, wizard generation.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/engineering/ask-the-flow",
+        "./skills/engineering/diagnosing-bugs",
+        "./skills/engineering/triage",
+        "./skills/engineering/improve-codebase-architecture",
+        "./skills/engineering/tdd",
+        "./skills/engineering/to-spec",
+        "./skills/engineering/to-tickets",
+        "./skills/engineering/wayfinder",
+        "./skills/engineering/implement",
+        "./skills/engineering/retro",
+        "./skills/engineering/research",
+        "./skills/engineering/domain-modeling",
+        "./skills/engineering/codebase-design",
+        "./skills/engineering/code-review",
+        "./skills/engineering/wizard"
+      ]
+    },
+    {
+      "name": "productivity",
+      "description": "Matt Pocock's productivity skills: teaching, questionnaires, re-pitching unclear messages, writing for agents.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/productivity/teach",
+        "./skills/productivity/to-questionnaire",
+        "./skills/productivity/wait-what",
+        "./skills/productivity/writing-for-agents"
+      ]
+    },
+    {
+      "name": "setup",
+      "description": "Per-repo configuration wizard for the pf-skills plugins: /setup-pf-skills scaffolds the docs/agents/ files and Agent-skills block that building, engineering, and one-shot read. Run once per repo.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/setup/setup-pf-skills"
+      ]
+    },
+    {
+      "name": "reviewing",
+      "description": "Owned review skills: ADR decay sweeps, PRD drift checks, and multi-phase branch review.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/reviewing/adr-decay",
+        "./skills/reviewing/prd-drift",
+        "./skills/reviewing/review-branch"
+      ]
+    }
+  ]
+}
