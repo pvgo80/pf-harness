@@ -52,6 +52,7 @@ claude plugin update <plugin>@pf-skills
 - `one-shot:code-review` ↔ `engineering:code-review` — complementary jobs (parallel-lens findings packet feeding the one-shot cascade vs two-axis Standards/Spec review), but both trigger on "review this branch"; install whichever matches the lane the project uses.
 - `reviewing:review-branch` ↔ both `code-review` skills — `review-branch` is the deep human-facing pre-merge review; the code-review skills are lane machinery. Co-installing is fine — invoke the one you mean by name. Claude Code's built-in `/code-review` also answers this trigger.
 - `one-shot:one-shot` ↔ `one-shot:aoe-orchestrate-plan` — split by trigger phrase: "run the pipeline" / "ship this" is the single-session cascade; "orchestrate the plan" / "work the tagged stack" is the aoe-driven stacked-PR flow. `aoe-orchestrate-plan` is slash-only, since it spawns billed sessions, and requires the external `aoe` CLI.
+- `one-shot:aoe-orchestrate-plan` ↔ `one-shot:aoe-lite` — same aoe mechanics, split by repo: the former is the full protocol for repos configured through `docs/agents/`; `aoe-lite` is for projects with their own workflow, driven by one private playbook outside the repo. Both are slash-only.
 
 ## Credits
 

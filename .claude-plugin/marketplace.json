@@ -31,6 +31,7 @@
       "skills": [
         "./skills/one-shot/one-shot",
         "./skills/one-shot/aoe-orchestrate-plan",
+        "./skills/one-shot/aoe-lite",
         "./skills/one-shot/council-of-agents",
         "./skills/one-shot/code-review",
         "./skills/one-shot/code-fix",

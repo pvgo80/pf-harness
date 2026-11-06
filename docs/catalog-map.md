@@ -34,6 +34,7 @@ flowchart TB
         os["one-shot + cascade: code-review → code-fix · create-pr · create-commit · council-of-agents"]
         prdlane["PRD lane: write-a-prd → prd-to-issues → issue-worker / issue-swarm"]
         aoeop["aoe-orchestrate-plan: stacked PRs over tagged GitHub issues — resident orchestrator, one aoe worker session per issue, independent lanes in parallel, switchable hitl/afk — requires external aoe CLI, slash-only"]
+        aoelite["aoe-lite: one aoe worker session per piece, driven by one private playbook outside the repo — for projects with their own workflow, requires external aoe CLI, slash-only"]
     end
 
     spf -. "writes docs/agents/*, read by all three lanes" .-> BUILDING
